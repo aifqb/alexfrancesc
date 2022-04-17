@@ -1,0 +1,15 @@
+.aflogo {
+  width: 140px;
+}
+
+.color-nav {
+  color: whitesmoke;
+}
+
+nav a {
+  color: rgb(184, 184, 184);
+}
+
+nav a:hover {
+  color: #ee189c;
+}
