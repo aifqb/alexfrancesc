@@ -1,9 +1,27 @@
-<div class="container">
-    <div class="row">
-        <div class="col-12 py-4">
-            <img class="img-fluid rounded float-start shadow" src="
-            https://firebasestorage.googleapis.com/v0/b/alexfrancesc-d6a56.appspot.com/o/inicio%2FDSC09804-2.jpg?alt=media&token=20b71740-a0ef-4236-a64c-4e6a0da75c46
-            " alt="">
-        </div>
-    </div>
+
+<div class="py-2">
+    <p fxLayoutAlign="center" class="pt-1 fw-light h4">Lista de productos</p>
+</div>
+
+
+
+<br>
+
+    <!-- segunda linea -->
+
+<div    fxLayout="row wrap"
+        class="animate__animated animate__fadeIn"
+
+        fxLayoutAlign="space-evenly start" 
+        fxLayoutGap="15px">
+            <div 
+                fxFlex="15"
+                fxFlex.lg="20"
+                fxFlex.sm="30"
+                fxFlex.xs="45"
+                *ngFor="let producto of productos"
+                class="m-0"
+                >
+                <app-pictures [producto]="producto"></app-pictures>
+            </div>
 </div>

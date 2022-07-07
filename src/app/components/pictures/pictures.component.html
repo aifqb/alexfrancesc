@@ -1,0 +1,15 @@
+
+        <mat-card class="mat-elevation-z8 animate__animated animate__fadeIn">
+            <img mat-card-image src="https://apiproductos.blob.core.windows.net/imagenes/{{producto.cod_Item_PF}}.jpg">
+            <mat-card-content>
+                <p> {{ producto.producto_Nombre }} </p>
+                <h4>Codigo: {{ producto.cod_Item_PF|number: '3.0' }}</h4>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-raised-button color="warn" [routerLink]="['/productos', producto._id]">
+                    más detalles
+                </button>
+            </mat-card-actions>
+        </mat-card>
+    
+    
